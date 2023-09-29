@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Print the strings on separate lines
+echo "one"
+echo "two"
+echo "three"
+echo "four"
+echo "five"
+
+# Create a text file with each string on a separate line
+filename="$(date +%Y-%m-%d)-file.txt"
+echo -e "one\ntwo\nthree\nfour\nfive" > "$filename"
